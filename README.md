@@ -75,6 +75,70 @@ The edge device is one or more Raspberry Pi devices running BalenaOS (Yocto). Th
 * store-and-forward - stores messages from the sensor containers until it can forward them via the Edge-Server API
 * wifi-connect - a service to let you connect the device to the correct wifi network
 
+# Installation on Ubuntu 20
+* sudo apt install postgres
+* sudo apt install default-jdk
+* sudo apt install activemq
+* curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
+* chmod +x nodesource_setup.sh
+* sudo ./nodesource_setup.sh
+* sudo apt install nodejs
+* git clone git@github.com:bubblesnet/controller.git
+* cd server
+* npm install
+* cd ../client
+* npm install
+* npm install react-scripts
+* configure activemq.xml from template
+
+### install Go to get the migration tool
+* sudo apt install golang
+* go get -tags 'postgres' -u github.com/golang-migrate/migrate/cmd/migrate
+
+### create the database and do the migrations
+* change the postgres password to whatever is required for the environment
+* cd controller/server/migrations
+
+### Call the following as many times as necessary to get up to latest
+* ./migrate_dev_up1.sh
+
+### Fix permissions
+* chmod 666 serve/src/public - this whole thing is a security issue
+
+### Initialize the database
+  * ./init_db.sh??
+  * create a user (table user (insert firstname, lastname,email, passwordhash,username,created,provisioned))
+  * create user settings (table usersettings all 0s)
+  * display settings????
+  * create a site (table site (userid,sitename))
+  * create a station (table station) (all fields)
+  * create a devicetype
+  * create a device (table device) ()
+  * create modules (table modules)
+  * create sensors (table sensors)
+  * create outlets (table outlets)
+
+### Configure the station
+  * Create config.locals in server directory
+
+### Start the controller
+* cp controller/server/etc/systemd/system/*.service /etc/systemd/system
+* systemctl enable bubbles_api
+*  systemctl enable bubbles_queue
+*  systemctl enable bubbles_websocket
+*  systemctl daemon-reload
+* Start the API server
+* Start the queue server
+* Start the web socket server
+* Start the web server
+* Login to the web server
+
+### Test the installation
+* Turn automation on/off
+* Turn all switches on/off
+* Take a picture
+* Smoke test the sensors
+
 ## Links to deeper dives
 * [Messaging](Messaging.md)
 * [Data Structures](DataStructures.md)
