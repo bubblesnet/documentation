@@ -57,3 +57,15 @@ more 1/8" tubing through the side of the cabinet and then through the lid of the
 
 The external Pi that tracks external pressure, temperature, humidity, and light is in a standard Pi case placed (not mounted)
 on top of the cabinet.
+
+### List of hardware within the cabinet
+* Exhaust can filter
+* Exhaust fan
+* 5V computer fan
+* 12V power supply
+* 5V power supply
+* LED grow light
+* Water pump
+* Air pump
+* Water heater
+* Space heater

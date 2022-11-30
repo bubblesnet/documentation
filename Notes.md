@@ -42,3 +42,17 @@ The water heater I use has its own thermostat. I wanted to incorporate "autonomo
 IDLE, VEGETATIVE and BLOOMING stages are well tested, the rest mostly not used. The cabinet
 as built was not suitable for germination.
 
+## Extensibility
+The components of the system are behind APIs that should allow users to add
+on to an installation of Bubbles.
+
+### Examples:
+
+A user could add a new container to the edge-device that
+simply sends properly formatted gRPC messages to the store-and-forward container
+and they will end up in the database and accessible as events in the UI.
+
+A user could send properly formatted messages to the Edge/Server API that
+would end up in the database and UI.
+
+
