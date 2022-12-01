@@ -18,7 +18,8 @@ filter through a standard 4" dryer pipe.
 
 The deep-water-culture reservoir is a doubled-up 20 gallon plastic storage container with lid.  The lid has four holes 
 in it to hold four net-pots filled with hydroton to grow the plants in.  There's also a hole in the center for a 1/4"
-PVC pipe to feed water from the water pump to the drip manifold that continuously waters the plants.
+PVC pipe to feed water from the water pump to the drip manifold that continuously waters the plants. It is doubled
+up to provide an extra layer of leak protection
 
 ![empty reservoir with pump and manifold]( empty_reservoir_with_pump_and_manifold.jpg)
 

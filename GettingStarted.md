@@ -9,29 +9,29 @@ Prerequisites:
 
 ## Build the hardware
 
-### Physcial cabinet
+### Physical cabinet
 [See the physical cabinet readme](cabinet/README.md)
 
 
-### Controller device
+## Controller device
 * Plug the 32G USB3 flash drive into the USB3 port on the Raspberry Pi 4
 
-## Setup Prerequisites
+### Setup Prerequisites
 * Install git
 * Install [balena CLI tools](https://www.balena.io/docs/reference/balena-cli/)
 * Install Go version 1.17.5 or later
 * Install Mage
 * Install Balena Etcher
 
-## Setup the controller device FIRST!
+### Setup the controller device FIRST!
 
 * Clone the [controller repo](https://github.com/bubblesnet/controller)
-* git clone https://github.com/bubblesnet/controller.git
+* ``` git clone https://github.com/bubblesnet/controller.git ```
 * Make a fleet named "bubblesnet4_controller_aarch64_prod" on balena, with a default device of Raspberry Pi 4.  Add the
   Raspberry Pi 4 to this fleet.
 * Setup the [Fleet Environment Variables](balena/EnvironmentVariables.md) for the bubblesnet4_controller_aarch64_prod fleet
 * Setup the [Fleet Device Configuration](balena/DeviceConfiguration.md)
-* Run the command "push_prod.cmd"
+* Run the command ``` push_prod.cmd ```
 * On the balena website, in the bubblesnet4_controller_aarch64_prod fleet, click add device, development, wifi and ethernet.
 * This will bring up Balena Etcher and allow you to burn a balena image to one of your 32G microSD cards.
 * BE VERY CAREFUL WITH BALENA ETCHER BECAUSE IT WILL ALLOW YOU TO OVERWRITE YOUR HARD DRIVES IF YOU USE IT WRONG!!!!!!!!
@@ -60,13 +60,13 @@ Prerequisites:
 * Go to the bubblesnet3 fleet and set the API_HOST, ACTIVEMQ_HOST fleet variables to that IP address.  This will allow the Pi 3B+s in the bubblesnet3 fleet to find the controller and get their own configuration.  Turning off the sensors in station setup allows you to add and test sensors one by one.
 
 ## Setup the cabinet and external edge-devices
-* Login to the balena CLI tools by running "balena login"
+* Login to the balena CLI tools by running ``` balena login ```
 * Clone the [edge-device repo](https://github.com/bubblesnet/edge-device)
-* git clone https://github.com/bubblesnet/edge-device.git
+* ``` git clone https://github.com/bubblesnet/edge-device.git ```
 * Make a fleet named "bubblesnet3" on balena, with a default device of Raspberry Pi 3B+.
 * Setup the [Fleet Environment Variables](balena/EnvironmentVariables.md) for the bubblesnet3 fleet 
 * Setup the [Fleet Device Configuration](balena/DeviceConfiguration.md)
-* Run the command "push_prod.cmd"
+* Run the command ``` push_prod.cmd ```
 * On the balena website, in the bubblesnet3 fleet, click add device, development, wifi and ethernet.
 * This will bring up Balena Etcher and allow you to burn a balena image to one of your 32G microSD cards.  
 * BE VERY CAREFUL WITH BALENA ETCHER BECAUSE IT WILL ALLOW YOU TO OVERWRITE YOUR HARD DRIVES IF YOU USE IT WRONG!!!!!!!!
@@ -83,6 +83,8 @@ Prerequisites:
 The Pi that runs inside the cabinet (i.e. cabinet device) is extremely elaborate
 and easy to screw up.  I strongly recommend qwiic connections wherever possible.
 
+THIS SCHEMATIC IS OUTDATED BUT STILL INSTRUCTIVE.  THE CURRENT SENSORS DO NOT EXIST, THE RELAY IS CONNECTED TO GPIO
+THROUGH 3V-5V LEVEL CONVERTERS, AND THE DISPENSERS ARE NOT REPRESENTED. I WILL UPDATE ASAP.
 ![Schematic](electronics/OverallGPIOSchematicV2.png)
 
 #### Camera
