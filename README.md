@@ -87,6 +87,7 @@ The edge device is one or more Raspberry Pi devices running BalenaOS (Yocto). Th
 ## Links to deeper dives
 * [Detailed Notes](Notes.md)
 * [Messaging](Messaging.md)
+* [Database](Database.md)
 * [Data Structures](DataStructures.md)
 * [API: GRPC](APIGRPC.md)
 * [API: Edge/Server](APIEdge.md)
