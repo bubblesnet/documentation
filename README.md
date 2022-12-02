@@ -1,14 +1,19 @@
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 [![License](images/bubblesnet.svg)](https://github.com/bubblesnet/documentation/LICENSE)
 
+![Controller CI](https://github.com/bubblesnet/controller/workflows/BubblesNetCI/badge.svg?branch=develop)
+![Edge-device CI](https://github.com/bubblesnet/edge-device/workflows/Go/badge.svg?branch=develop)
+
 # BubblesNet
 BubblesNet is a system for the monitoring and automatic control of a secure, indoor deep-water-culture hydroponic 
 setup using either a hard cabinet or a tent.  It has some unique features 
 (i.e. door security, odor control) but is mostly applicable to any plant that you want to grow under
 tightly controlled and monitored conditions.
 
-If you're sure you know what you're doing, and you're in a super-duper hurry to install 
-and run an instance of BubblesNet, [start here](GettingStarted.md)
+If you want to jump in, install built images and just use the system, [start here](GettingStartedPublicFleet.md)
+
+If you're sure you know what you're doing, and you're in a super-duper hurry to start
+hacking on BubblesNet, [start here](GettingStartedDeveloping.md)
 
 You're here, so you probably already have an idea what requirements you're 
 looking to fulfill, but to see what was top of my mind developing this, see
