@@ -24,6 +24,7 @@ and more importantly because of the significant documentation required by the
 physical components of the system.  I may live to regret this.
 
 ## The Dream
+
 The most ambitious aspiration for this project is to use data science/ML to correlate the 
 substantial data collection with the results seen in the pictures collected.  
 
@@ -45,7 +46,8 @@ Here is what the user interface of the system looks like in operation:
 The Station Control screen is where I spend 99% of my time in the system.
 
 ### Devices
-The system software has 3 devices:
+
+The system software runs on 3 devices:
 * [Controller](https://github.com/bubblesnet/controller) - A Raspberry Pi 4 8GB that contains the data storage, web user interface and alerting functions. 
 * [Edge-device](https://github.com/bubblesnet/edge-device) (cabinet) - A Raspberry Pi 3B+ that contains the actual sensors and relay controls to monitor and control the environment in the
 grow space.  Designed to run on a Pi (3CMM, 3B, 3B+, 4), port to another type of device would be painful.
@@ -54,6 +56,7 @@ grow space.  Designed to run on a Pi (3CMM, 3B, 3B+, 4), port to another type of
 Within the system these devices are typically referred to as "edge_device".
 
 ### Controller
+
 The controller is a single Raspberry Pi 4 running the control user interface, and data collection and analysis services designed to 
 work with the bubblesnet edge-device. The controller user interface can be accessed from a browser on any device
 on the same network.
@@ -84,15 +87,22 @@ The edge device is one or more Raspberry Pi devices running BalenaOS (Yocto). Th
 
 ![Edge device in balena with 4 containers](balena/edge-device-device.png)
 
+## Branch Names
+
+Words matter. I buy into the notion of using "main" instead of "master" and have done
+so for all my repos except ... this one which I just noticed uses "master". Sigh. I'll get around to it.
+
 ## Links to deeper dives
 * [Detailed Notes](Notes.md)
 * [Messaging](Messaging.md)
+* [Environment Variables](balena/EnvironmentVariables.md)
 * [Database](Database.md)
 * [Data Structures](DataStructures.md)
 * [API: GRPC](APIGRPC.md)
 * [API: Edge/Server](APIEdge.md)
 * [API: UI Service](APIUIService.md)
 * [History](History.md)
+
 
 
 
