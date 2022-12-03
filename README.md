@@ -15,6 +15,11 @@ that you set up an instance of the system running pre-built images from our Bale
 
 To get started with the public BubblesNet fleet, [start here](GettingStartedPublicFleet.md)
 
+**********************************************************************
+If you blew past that suggestion, I'm going to suggest it again:
+To get started with the public BubblesNet fleet, [start here](GettingStartedPublicFleet.md)
+**********************************************************************
+
 If you're sure you know what you're doing, and you're in a super-duper hurry to start
 hacking on BubblesNet, [start here](GettingStartedDeveloping.md)
 
@@ -52,6 +57,7 @@ Here is what the user interface of the system looks like in operation:
 ![A screenshot of the control tab](user_interface/Screen_Station_Control.png "The system control tab")
 
 The Station Control screen is where I spend 99% of my time in the system.
+See [here](user_interface) for the full user interface.
 
 ### Devices
 
