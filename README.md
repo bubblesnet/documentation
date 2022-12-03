@@ -10,7 +10,8 @@ setup using either a hard cabinet or a tent.  It has some unique features
 (i.e. door security, odor control) but is mostly applicable to any plant that you want to grow under
 tightly controlled and monitored conditions.
 
-If you want to jump in, install built images and just use the system, [start here](GettingStartedPublicFleet.md)
+If you want to jump in, install built images and just use the system, 
+[start here](GettingStartedPublicFleet.md)
 
 If you're sure you know what you're doing, and you're in a super-duper hurry to start
 hacking on BubblesNet, [start here](GettingStartedDeveloping.md)
