@@ -1,8 +1,8 @@
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 [![License](images/bubblesnet.svg)](https://github.com/bubblesnet/documentation/LICENSE)
 
-![Controller CI](https://github.com/bubblesnet/controller/workflows/BubblesNetCI/badge.svg?branch=develop)
-![Edge-device CI](https://github.com/bubblesnet/edge-device/workflows/Go/badge.svg?branch=develop)
+![Controller CI](https://github.com/bubblesnet/controller/workflows/controller-ci/badge.svg?branch=develop)
+![Edge-device CI](https://github.com/bubblesnet/edge-device/workflows/edge-device-ci/badge.svg?branch=develop)
 
 # BubblesNet
 BubblesNet is a system for the monitoring and automatic control of a secure, indoor deep-water-culture hydroponic 
