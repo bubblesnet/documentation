@@ -3,6 +3,8 @@
 
 ![Controller CI](https://github.com/bubblesnet/controller/workflows/controller-ci/badge.svg?branch=develop)
 ![Edge-device CI](https://github.com/bubblesnet/edge-device/workflows/edge-device-ci/badge.svg?branch=develop)
+![ActiveMQ CI](https://github.com/bubblesnet/activemq-5_17-block/workflows/activemq-ci/badge.svg?branch=develop)
+![Postgres CI](https://github.com/bubblesnet/postgresql-11-block/workflows/postgres-ci/badge.svg?branch=develop)
 
 # BubblesNet
 BubblesNet is a system for the monitoring and automatic control of a secure, indoor deep-water-culture hydroponic 
