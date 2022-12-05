@@ -112,6 +112,7 @@ Words matter. I buy into the notion of using "main" instead of "master" and have
 so for all my repos except ... this one which I just noticed uses "master". Sigh. I'll get around to it.
 
 ## Links to deeper dives
+* [Versions of things](Versions.md)
 * [Detailed Notes](Notes.md)
 * [Messaging](Messaging.md)
 * [Environment Variables](balena/EnvironmentVariables.md)
