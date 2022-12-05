@@ -81,8 +81,8 @@ The controller uses seven containers (which balena calls micro-services), 1 user
  for database and queue and 3 containers with custom nodejs express applications:
 * **ui** - a web user interface for controlling one or more edge devices
   and viewing the data from those devices.  Written in React.
-* **database** Postgresql XX.X database container
-* **activemq** ActiveMQ XX.X queue system container
+* **database** Postgresql 11 database container
+* **activemq** ActiveMQ 5.17 queue system container
 * **api** API server - takes measurement and event messages from edge-devices and queues them for processing.  Also
   serves UI data requests. 
 * **queue** Queue server - takes measurement and event messages off the queue and stores them in the database and also publishes
@@ -103,7 +103,10 @@ The edge device is one or more Raspberry Pi devices running BalenaOS (Yocto). Th
 
 ![Edge device in balena with 4 containers](balena/edge-device-device.png)
 
-## Branch Names
+## Branching and Branch Names
+
+We do the typical "hack on feature branch off develop", "PR back to develop for integration testing", 
+"PR back to main for release".
 
 Words matter. I buy into the notion of using "main" instead of "master" and have done
 so for all my repos except ... this one which I just noticed uses "master". Sigh. I'll get around to it.
