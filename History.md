@@ -1,5 +1,18 @@
 # History (i.e. where the bugs come from)
-This open-source project is a port and integration of an existing set of unrelated personal projects.  This
+
+## Why?
+In 2016, Massachusetts voters legalized possession of recreational marijuana via
+a ballot initiative that the Democratic-controlled state government almost
+universally opposed.
+The original legislation legalized possession and growing, but left recreational
+sales trapped behind a regulation-writing process that was intentionally slow-walked
+by the state legislature. There was no reasonable expectation that recreational sales
+would ever be opened up, and indeed recreational sales only began in late 2018. 
+This left growing your own as the only avenue, so I walked
+that path.
+
+# Where did the project come from?
+This instance of the project is a port and integration of an existing set of unrelated personal projects.  This
 original set of projects included:
 * Server written in Java J2EE as APIs that write JSON files to filesystem
 * File processors written in Java that read/write ActiveMQ, move file data into databases and archive files
